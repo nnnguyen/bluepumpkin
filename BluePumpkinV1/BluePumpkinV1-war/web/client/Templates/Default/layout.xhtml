@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+    <h:head>
+        <title>BluePumkin</title>
+        <link href="client/Templates/Default/style.css" type="text/css" rel="stylesheet" />
+        <link REL="SHORTCUT ICON" HREF='client/Templates/Default/images/iconBP.bmp'/>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    </h:head>
+    <h:body>
+
+        <div id="container">
+
+           <ui:insert name="Header">
+           <div id="header2">
+            <div class="resize">
+                <div id="h-logo">
+                <!--img src="templates/Default/images/lg_BluePumpkin.png" width="400" height="132" /-->
+                </div>
+                <div id="hmn">
+
+                    <div id="hmnLogin">
+                        <h:form id="frmLogin">
+                            <table border="0">
+                                <tbody>
+                                    <tr valign="bottom">
+                                        <td>Username:</td>
+                                        <td>Password:</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h:inputText id="txtUser"/></td>
+                                        <td><h:inputSecret id="txtPwd"/></td>
+                                        <td><h:commandButton id="btLogin" value="Login"/></td>
+                                    </tr>
+                                    <tr>
+                                        <td><h:selectBooleanCheckbox id="cbKeepme"/> Keep me logged in.</td>
+                                        <td colspan="2"><a href="index.html">Forgot your password?</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </h:form>
+                    </div>
+
+                    <div id="hmnMenuTop">
+                        Home | Events | Feedback | FAQs
+                    </div>
+                </div>
+            </div>
+           </div>
+           </ui:insert>
+
+           <div id="body">
+            <div class="resize">
+                <ui:insert name="Slide">
+                    <div id="bd_Slide">
+                    </div>
+                </ui:insert>
+                <div id="bd_Left">
+                    <ui:insert name="Content1">
+                    <div class="Block11">
+                        Content 1
+                    </div>
+                    <div class="Block11">
+                        Content 2
+                    </div>
+                    <div class="Block11">
+                        Content 1
+                    </div>
+                    <div class="Block11">
+                        Content 2
+                    </div>
+                    <div class="Block12">
+                        Content 3
+                    </div>
+                    <div class="Block13">
+                        Content 4
+                    </div>
+                    <div class="Block13">
+                        Content 4
+                    </div>
+                    <div class="Block13">
+                        Content 4
+                    </div>
+                    <div class="Block13">
+                        Content 4
+                    </div>
+                    <div class="Block13">
+                        Content 4
+                    </div>
+                    </ui:insert>
+                </div>
+                <div id="bd_Right">
+                    <ui:insert name="Content2">
+                    <div class="Block14">
+                        Content 11
+                    </div>
+                    <div class="Block14">
+                        Content 12
+                    </div>
+                    <div class="Block14">
+                        Content 13
+                    </div>
+                    <div class="Block14">
+                        Content 14
+                    </div>
+                    </ui:insert>
+                </div>
+                <div class="clr2" />
+            </div>
+          </div>
+
+          <div id="footer">
+                <div class="resize">
+                    <div id="ft_left">
+                        <ui:insert name="Footer">
+                            @Group3: BluePumpkin<br/>
+                            Support:hoaianhit@gmail.com
+                        </ui:insert>
+                    </div>
+                    <div id="ft_right">
+                        <img src="client/Templates/Default/images/lg_BluePumpkin_md1.png" height="80" />
+                    </div>
+                </div>
+          </div>
+        </div>
+    </h:body>
+</html>
